@@ -4,7 +4,7 @@ public class StepTracker
  private int minSteps, totalSteps;
  private int totalDays, actDays;
  public StepTracker(int goal){
-  minSteps = goals;
+  minSteps = goal;
   totalSteps = 0;
   totalDays = 0;
   actDays = 0;
@@ -16,7 +16,7 @@ public class StepTracker
    actDays++;
  }
  public int activeDays(){
-  return actDays();
+  return actDays;
  }
  public double averageSteps(){
   if(totalDays == 0)
